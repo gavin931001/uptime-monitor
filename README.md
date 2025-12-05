@@ -41,6 +41,6 @@ graph TD
     
     TargetWeb -->|回傳狀態 200/500| BackendAPI
     BackendAPI -->|更新狀態| Firestore
-    BackendAPI -->|狀態異常 (Down)| EmailService[Gmail SMTP]
+    BackendAPI -->|"狀態異常 (Down)"| EmailService[Gmail SMTP]
     EmailService -->|發送警報| User
 ```
