@@ -31,7 +31,7 @@ UptimeGuard 是一個為開發者與學生設計的網站狀態監控工具。�
 
 ```mermaid
 graph TD
-    User[使用者] -->|登入/管理| Frontend[React 前端 (Vercel)]
+    User[使用者] -->|登入/管理| Frontend["React 前端 (Vercel)"]
     Frontend -->|讀寫數據| Firestore[Firebase Firestore]
     Frontend -->|Google Auth| FirebaseAuth[Firebase Authentication]
     
